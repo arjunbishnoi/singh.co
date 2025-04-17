@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-inter)'],
       },
+      colors: {
+        cream: '#FAF9F6',
+      },
     },
   },
   plugins: [],
