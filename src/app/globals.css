@@ -16,25 +16,25 @@
   }
   
   body {
-    @apply min-h-screen;
+    @apply min-h-screen tracking-[-0.04em];
     background-color: var(--background-cream);
   }
 }
 
 @layer components {
   .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-6xl mx-auto px-6 lg:px-8;
   }
 
   .hero-title {
-    @apply text-[12rem] leading-none font-bold tracking-tight;
+    @apply text-[12rem] leading-none font-bold tracking-[-0.08em];
   }
 
   .hero-email {
-    @apply text-lg font-medium hover:underline cursor-pointer;
+    @apply text-lg font-medium hover:underline cursor-pointer tracking-[-0.04em];
   }
 
   .hero-text {
-    @apply text-3xl font-normal leading-relaxed;
+    @apply text-3xl font-normal leading-relaxed tracking-[-0.04em];
   }
 }
