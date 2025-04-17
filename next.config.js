@@ -5,8 +5,9 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: '/',
-  trailingSlash: true
+  trailingSlash: true,
+  basePath: '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '' : undefined
 };
 
 module.exports = nextConfig;
