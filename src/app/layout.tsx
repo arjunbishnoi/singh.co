@@ -1,3 +1,5 @@
+"use client";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -12,9 +14,6 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Mansi Singh - Portfolio",
   description: "Personal portfolio website showcasing my work and expertise",
-  icons: {
-    icon: '/singh.co/favicon.ico',
-  },
 };
 
 export default function RootLayout({
@@ -27,7 +26,6 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="icon" href="/singh.co/favicon.ico" />
       </head>
       <body className="font-sans antialiased">
         {children}
