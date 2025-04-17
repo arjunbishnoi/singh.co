@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && touch out/.nojekyll",
+    "build": "next build && type nul > out/.nojekyll",
     "start": "next start",
     "lint": "next lint",
     "export": "next build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "type nul > out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "next": "^14.1.0",
