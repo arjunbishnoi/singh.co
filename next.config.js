@@ -6,8 +6,8 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/singh.co',
+  assetPrefix: '/singh.co/',
   webpack: (config) => {
     config.module.rules.push({
       test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -16,7 +16,7 @@ const nextConfig = {
         options: {
           name: '[name].[ext]',
           outputPath: 'static/fonts/',
-          publicPath: '/static/fonts/',
+          publicPath: '/singh.co/static/fonts/',
         },
       },
     });
