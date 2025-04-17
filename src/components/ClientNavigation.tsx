@@ -18,16 +18,16 @@ export default function ClientNavigation() {
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-12">
-              <Link href={`${basePath}/about`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/about`} className="text-base font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase">
                 About
               </Link>
-              <Link href={`${basePath}/projects`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/projects`} className="text-base font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase">
                 Projects
               </Link>
-              <Link href={`${basePath}/other-things`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/other-things`} className="text-base font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase">
                 Other Things
               </Link>
-              <Link href={`${basePath}/contact`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/contact`} className="text-base font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase">
                 Contact
               </Link>
             </div>
@@ -57,28 +57,28 @@ export default function ClientNavigation() {
         <div className="h-full flex flex-col items-center justify-center space-y-8">
           <Link 
             href={`${basePath}/about`}
-            className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
+            className="text-2xl font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </Link>
           <Link 
             href={`${basePath}/projects`}
-            className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
+            className="text-2xl font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
           </Link>
           <Link 
             href={`${basePath}/other-things`}
-            className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
+            className="text-2xl font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
             Other Things
           </Link>
           <Link 
             href={`${basePath}/contact`}
-            className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
+            className="text-2xl font-semibold text-black hover:text-gray-400 transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
