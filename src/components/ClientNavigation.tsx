@@ -5,28 +5,29 @@ import { useState } from "react";
 
 export default function ClientNavigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const basePath = process.env.NODE_ENV === 'production' ? '' : '';
 
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto h-full px-4">
           <div className="flex items-center justify-center h-full relative">
-            <Link href="/" className="absolute left-4 text-2xl font-bold text-black">
+            <Link href={`${basePath}/`} className="absolute left-4 text-2xl font-bold text-black">
               mansi.
             </Link>
             
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-12">
-              <Link href="/about" className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/about`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
                 About
               </Link>
-              <Link href="/projects" className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/projects`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
                 Projects
               </Link>
-              <Link href="/other-things" className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/other-things`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
                 Other Things
               </Link>
-              <Link href="/contact" className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
+              <Link href={`${basePath}/contact`} className="text-base font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase">
                 Contact
               </Link>
             </div>
@@ -55,28 +56,28 @@ export default function ClientNavigation() {
       >
         <div className="h-full flex flex-col items-center justify-center space-y-8">
           <Link 
-            href="/about" 
+            href={`${basePath}/about`}
             className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
             About
           </Link>
           <Link 
-            href="/projects" 
+            href={`${basePath}/projects`}
             className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
             Projects
           </Link>
           <Link 
-            href="/other-things" 
+            href={`${basePath}/other-things`}
             className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
             Other Things
           </Link>
           <Link 
-            href="/contact" 
+            href={`${basePath}/contact`}
             className="text-2xl font-semibold text-gray-800 hover:text-black transition-colors tracking-wider lowercase"
             onClick={() => setIsMenuOpen(false)}
           >
