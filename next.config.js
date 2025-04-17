@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  output: 'export',
+  distDir: 'out',
+  basePath: '/singh.co',
+  images: {
+    unoptimized: true
+  }
 };
 
 module.exports = nextConfig;
