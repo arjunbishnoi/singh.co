@@ -13,50 +13,50 @@ export default function OtherThings() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
           {/* Item 1 */}
-          <Link href="/other-things/personal-photography" className="project-card">
+          <Link href="/other-things/iris" className="project-card">
             <img 
-              src="https://picsum.photos/800/600?random=5" 
-              alt="Personal Photography" 
+              src="/videos/iris/poster.jpg" 
+              alt="IRIS" 
               className="project-image"
             />
             <div className="project-overlay">
-              <h3 className="project-title">Personal Photography</h3>
+              <h3 className="project-title">IRIS</h3>
             </div>
           </Link>
 
           {/* Item 2 */}
-          <Link href="/other-things/travel-adventures" className="project-card">
+          <Link href="/other-things/women" className="project-card">
             <img 
-              src="https://picsum.photos/800/600?random=6" 
-              alt="Travel Adventures" 
+              src="/women/8.jpg" 
+              alt="WOMEN" 
               className="project-image"
             />
             <div className="project-overlay">
-              <h3 className="project-title">Travel Adventures</h3>
+              <h3 className="project-title">WOMEN</h3>
             </div>
           </Link>
 
           {/* Item 3 */}
-          <Link href="/other-things/creative-writing" className="project-card">
+          <Link href="/other-things/shimla-people-and-i" className="project-card">
             <img 
-              src="https://picsum.photos/800/600?random=7" 
-              alt="Creative Writing" 
+              src="/shimla/8.jpg" 
+              alt="SHIMLA, PEOPLE AND I." 
               className="project-image"
             />
             <div className="project-overlay">
-              <h3 className="project-title">Creative Writing</h3>
+              <h3 className="project-title">SHIMLA, PEOPLE AND I.</h3>
             </div>
           </Link>
 
           {/* Item 4 */}
-          <Link href="/other-things/art-collection" className="project-card">
+          <Link href="/other-things/being-dead" className="project-card">
             <img 
-              src="https://picsum.photos/800/600?random=8" 
-              alt="Art Collection" 
+              src="/being-dead/9.jpg" 
+              alt="BEING DEAD" 
               className="project-image"
             />
             <div className="project-overlay">
-              <h3 className="project-title">Art Collection</h3>
+              <h3 className="project-title">BEING DEAD</h3>
             </div>
           </Link>
         </div>

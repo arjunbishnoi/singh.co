@@ -26,7 +26,7 @@
 
 @layer components {
   .hero-title {
-    @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] leading-none font-bold tracking-[-0.06em] sm:tracking-[-0.08em] sm:pl-0 pl-0 w-full;
+    @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] leading-none font-bold tracking-[-0.04em] sm:tracking-[-0.06em] sm:pl-0 pl-0 w-full;
   }
 
   .hero-email {
@@ -37,7 +37,7 @@
   }
 
   .hero-text {
-    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.04em] w-fit space-y-4 sm:space-y-6 sm:ml-auto text-center sm:text-right;
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-[-0.04em] w-fit space-y-4 sm:space-y-6 sm:ml-auto text-center sm:text-right;
   }
 
   .hero-text p {
@@ -115,7 +115,19 @@
   }
 
   .about-text {
-    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium tracking-[-0.04em] max-w-4xl space-y-6 sm:space-y-8;
+    @apply text-lg sm:text-xl md:text-2xl font-medium tracking-[-0.02em] max-w-4xl space-y-6;
+  }
+
+  .about-text p {
+    @apply leading-relaxed text-gray-800;
+  }
+
+  .about-text p:first-child {
+    @apply text-black font-semibold;
+  }
+
+  .about-text p:last-child {
+    @apply text-gray-700;
   }
 
   .contact-form {
