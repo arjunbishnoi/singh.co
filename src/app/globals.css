@@ -26,15 +26,22 @@
 
 @layer components {
   .hero-title {
-    @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] leading-none font-bold tracking-[-0.08em];
+    @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] leading-none font-bold tracking-[-0.06em] sm:tracking-[-0.08em] sm:pl-0 pl-0 w-full;
   }
 
   .hero-email {
-    @apply text-base sm:text-lg md:text-xl lg:text-3xl font-medium underline cursor-pointer tracking-[-0.04em] w-fit;
+    @apply text-base sm:text-lg md:text-xl lg:text-3xl font-medium sm:font-medium font-bold tracking-[-0.04em] w-fit text-center sm:text-left;
+    @apply bg-black text-white px-6 py-2 sm:px-8 sm:py-3 rounded-full;
+    @apply transition-all duration-200 ease-out hover:bg-gray-800 hover:scale-[1.02];
+    @apply no-underline;
   }
 
   .hero-text {
-    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.04em] ml-auto w-fit space-y-4 sm:space-y-6;
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.04em] w-fit space-y-4 sm:space-y-6 sm:ml-auto text-center sm:text-right;
+  }
+
+  .hero-text p {
+    @apply leading-tight sm:leading-normal;
   }
 
   .section-title {
@@ -46,27 +53,46 @@
   }
 
   .view-all-btn {
-    @apply text-base sm:text-lg md:text-xl font-medium hover:text-gray-600 transition-colors tracking-[-0.04em];
+    @apply text-base sm:text-lg md:text-xl font-medium tracking-[-0.04em] w-fit;
+    @apply bg-black text-white px-6 py-2 sm:px-8 sm:py-3 rounded-full;
+    @apply transition-all duration-200 ease-out hover:bg-gray-800 hover:scale-[1.02];
+    @apply no-underline;
   }
 
   .project-card {
-    @apply bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+    @apply relative overflow-hidden rounded-2xl transition-all duration-300 ease-out;
   }
 
   .project-image {
-    @apply w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover;
+    @apply w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover transition-all duration-300 ease-out;
+  }
+
+  .project-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center transition-all duration-300 ease-out;
+  }
+
+  .project-title {
+    @apply text-white text-2xl sm:text-3xl md:text-4xl font-bold tracking-[-0.04em] opacity-0 transform translate-y-4 transition-all duration-300 ease-out;
+  }
+
+  .project-card:hover .project-image {
+    @apply scale-105 blur-sm;
+  }
+
+  .project-card:hover .project-overlay {
+    @apply bg-opacity-50;
+  }
+
+  .project-card:hover .project-title {
+    @apply opacity-100 translate-y-0;
   }
 
   .project-content {
     @apply p-6 sm:p-8 space-y-3 sm:space-y-4;
   }
 
-  .project-title {
-    @apply text-xl sm:text-2xl md:text-3xl font-semibold tracking-[-0.04em];
-  }
-
   .project-description {
-    @apply text-base sm:text-lg md:text-xl text-gray-600 tracking-[-0.04em];
+    @apply text-base sm:text-lg md:text-xl text-gray-600 tracking-[-0.04em] transition-colors duration-200 ease-out;
   }
 
   .about-text {
@@ -78,22 +104,62 @@
   }
 
   .form-input {
-    @apply w-full bg-transparent border-b-2 border-black py-3 sm:py-4 text-lg sm:text-xl focus:outline-none focus:border-gray-600 transition-colors;
+    @apply w-full bg-white rounded-2xl px-6 py-4 text-lg sm:text-xl focus:outline-none focus:ring-2 focus:ring-black transition-all duration-200 ease-out;
+    @apply border-2 border-gray-200 hover:border-gray-300;
   }
 
   .submit-btn {
-    @apply bg-black text-white px-6 sm:px-8 py-3 sm:py-4 text-lg sm:text-xl font-medium hover:bg-gray-800 transition-colors;
+    @apply bg-black text-white px-8 py-4 text-lg sm:text-xl font-medium tracking-[-0.04em] rounded-2xl;
+    @apply transition-all duration-200 ease-out hover:bg-gray-800 hover:scale-[1.02];
+    @apply w-full sm:w-auto;
   }
 
   .content-start {
-    @apply pl-4 sm:pl-6 md:pl-8 lg:pl-12;
+    @apply pl-8 md:pl-12;
   }
 
   .content-end {
-    @apply pr-4 sm:pr-6 md:pr-8 lg:pr-12;
+    @apply pr-8 md:pr-12;
   }
 
   .content-container {
     @apply content-start content-end;
+  }
+
+  .back-nav {
+    @apply flex items-center gap-2 text-base sm:text-lg text-gray-500 hover:text-black transition-colors duration-200 ease-out mb-4 font-semibold;
+  }
+
+  .back-nav-arrow {
+    @apply w-4 h-4 transform rotate-180 transition-transform duration-200 ease-out;
+  }
+
+  .back-nav:hover .back-nav-arrow {
+    @apply translate-x-1;
+  }
+
+  .slideshow-dots {
+    @apply flex justify-center gap-2 mt-4;
+  }
+
+  .slideshow-dot {
+    @apply w-2 h-2 rounded-full transition-all duration-300 ease-out;
+  }
+
+  .slideshow-dot.active {
+    @apply bg-black scale-125;
+  }
+
+  .slideshow-dot.inactive {
+    @apply bg-gray-300 hover:bg-gray-400;
+  }
+
+  .project-detail .project-image {
+    @apply transition-transform duration-300 ease-out;
+  }
+
+  .project-detail .project-card:hover .project-image {
+    @apply scale-105;
+    filter: none;
   }
 }

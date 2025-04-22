@@ -67,28 +67,28 @@ export default function ClientNavigation() {
                 <a 
                   href="#about" 
                   onClick={(e) => handleNavigation(e, '#about')}
-                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-colors tracking-[-0.04em] lowercase"
+                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase"
                 >
                   About
                 </a>
                 <a 
                   href="/projects"
                   onClick={(e) => handleNavigation(e, '/projects')}
-                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-colors tracking-[-0.04em] lowercase"
+                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase"
                 >
                   Projects
                 </a>
                 <a 
                   href="/other-things"
                   onClick={(e) => handleNavigation(e, '/other-things')}
-                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-colors tracking-[-0.04em] lowercase"
+                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase"
                 >
                   Other Things
                 </a>
                 <a 
                   href="#contact"
                   onClick={(e) => handleNavigation(e, '#contact')}
-                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-colors tracking-[-0.04em] lowercase"
+                  className="text-lg md:text-xl font-semibold text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase"
                 >
                   Contact
                 </a>
@@ -129,11 +129,11 @@ export default function ClientNavigation() {
           isMenuOpen ? 'h-[calc(100vh-5rem)] md:h-[calc(100vh-6rem)]' : 'h-0'
         }`}
       >
-        <div className="h-full content-container flex flex-col items-start justify-center -mt-20 space-y-10 text-4xl">
+        <div className="h-full content-container flex flex-col items-center justify-center -mt-20 space-y-10 text-4xl">
           <a 
             href="#about"
             onClick={(e) => handleNavigation(e, '#about')}
-            className={`text-black hover:text-gray-400 transition-all duration-500 tracking-[-0.04em] lowercase font-medium ${
+            className={`text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase font-medium ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '0.1s' : '0s' }}
@@ -143,7 +143,7 @@ export default function ClientNavigation() {
           <a 
             href="/projects"
             onClick={(e) => handleNavigation(e, '/projects')}
-            className={`text-black hover:text-gray-400 transition-all duration-500 tracking-[-0.04em] lowercase font-medium ${
+            className={`text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase font-medium ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '0.2s' : '0s' }}
@@ -153,7 +153,7 @@ export default function ClientNavigation() {
           <a 
             href="/other-things"
             onClick={(e) => handleNavigation(e, '/other-things')}
-            className={`text-black hover:text-gray-400 transition-all duration-500 tracking-[-0.04em] lowercase font-medium ${
+            className={`text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase font-medium ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '0.3s' : '0s' }}
@@ -163,7 +163,7 @@ export default function ClientNavigation() {
           <a 
             href="#contact"
             onClick={(e) => handleNavigation(e, '#contact')}
-            className={`text-black hover:text-gray-400 transition-all duration-500 tracking-[-0.04em] lowercase font-medium ${
+            className={`text-black hover:text-gray-400 transition-all duration-200 ease-out tracking-[-0.04em] lowercase font-medium ${
               isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}
             style={{ transitionDelay: isMenuOpen ? '0.4s' : '0s' }}
