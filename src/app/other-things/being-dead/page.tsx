@@ -7,17 +7,17 @@ import Slideshow from "@/components/Slideshow";
 
 export default function BeingDead() {
   const images = [
-    "/being-dead/1.jpg",
-    "/being-dead/2.jpg",
-    "/being-dead/3.jpg",
-    "/being-dead/4.jpg",
-    "/being-dead/5.jpg",
-    "/being-dead/6.jpg",
-    "/being-dead/7.jpg",
-    "/being-dead/8.jpg",
-    "/being-dead/9.jpg",
-    "/being-dead/10.jpg",
-    "/being-dead/11.jpg"
+    "/being-dead/1.JPG",
+    "/being-dead/2.JPG",
+    "/being-dead/3.JPG",
+    "/being-dead/4.JPG",
+    "/being-dead/5.JPG",
+    "/being-dead/6.JPG",
+    "/being-dead/7.JPG",
+    "/being-dead/8.JPG",
+    "/being-dead/9.JPG",
+    "/being-dead/10.JPG",
+    "/being-dead/11.JPG"
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function BeingDead() {
           </Link>
         </div>
         
-        <Slideshow images={images} altPrefix="BEING DEAD" />
+        <Slideshow images={images} altPrefix="BEING DEAD" hideControls={true} autoplay={true} />
         
         <div className="max-w-3xl mx-auto mb-32">
           <p className="text-lg leading-relaxed text-gray-700 space-y-6">
