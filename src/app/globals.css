@@ -87,11 +87,11 @@
   }
 
   .content-start {
-    @apply pl-4 sm:pl-6 md:pl-8 lg:pl-[calc(3rem+var(--logo-width-md))];
+    @apply pl-4 sm:pl-6 md:pl-8 lg:pl-12;
   }
 
   .content-end {
-    @apply pr-4 sm:pr-6 md:pr-8 lg:pr-[calc(3rem+var(--logo-width-md))];
+    @apply pr-4 sm:pr-6 md:pr-8 lg:pr-12;
   }
 
   .content-container {

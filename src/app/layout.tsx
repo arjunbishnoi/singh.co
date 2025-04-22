@@ -6,7 +6,6 @@ const inter = Inter({
   subsets: ["latin"],
   display: "swap",
   variable: '--font-inter',
-  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -20,12 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} scroll-smooth`}>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      </head>
-      <body className="font-sans antialiased">
+    <html lang="en" className={inter.variable}>
+      <body className="min-h-screen bg-cream font-sans antialiased">
         {children}
       </body>
     </html>
