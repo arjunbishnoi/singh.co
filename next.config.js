@@ -6,12 +6,12 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: '',
-  assetPrefix: '',
+  basePath: process.env.NODE_ENV === 'production' ? '/mansisingh.co' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/mansisingh.co/' : '',
   webpack: (config) => {
     config.module.rules.push({
       test: /\.css$/,
-      use: ['style-loader', 'css-loader', 'postcss-loader']
+      use: ['css-loader', 'postcss-loader']
     });
     return config;
   }
