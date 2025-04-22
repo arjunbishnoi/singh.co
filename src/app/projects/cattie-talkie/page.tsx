@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
 
-export default function SocialMedia() {
+export default function CattieTalkie() {
   const images = [
     "/cattie-talkie/1.jpg",
     "/cattie-talkie/2.jpg",

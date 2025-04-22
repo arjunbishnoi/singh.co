@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
 
-export default function ContentStrategy() {
+export default function PawPatrol() {
   const images = [
     "/paw-patrol/1.png",
     "/paw-patrol/2.png",

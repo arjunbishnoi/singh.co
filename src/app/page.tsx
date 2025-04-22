@@ -106,7 +106,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Project 1 */}
-            <Link href="/projects/brand-identity" className="project-card">
+            <Link href="/projects/heineken" className="project-card">
               <img 
                 src="/heineken/1.jpg"
                 alt="HEINEKEN Project" 
@@ -118,7 +118,7 @@ export default function Home() {
             </Link>
 
             {/* Project 2 */}
-            <Link href="/projects/social-media" className="project-card">
+            <Link href="/projects/cattie-talkie" className="project-card">
               <img 
                 src="/cattie-talkie/1.jpg"
                 alt="CATTIE TALKIE Project" 

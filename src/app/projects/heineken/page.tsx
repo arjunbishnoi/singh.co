@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 import Slideshow from "@/components/Slideshow";
 
-export default function BrandIdentity() {
+export default function Heineken() {
   const images = [
     "/heineken/1.jpg",  // AC Milan Instagram post
     "/heineken/2.jpg",  // Team coasters
