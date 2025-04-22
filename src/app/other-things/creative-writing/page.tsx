@@ -26,7 +26,7 @@ export default function CreativeWriting() {
         <h1 className="section-title mb-8">creative writing.</h1>
         
         <div className="mb-32">
-          <Slideshow images={images} />
+          <Slideshow images={images} altPrefix="Creative Writing" />
         </div>
       </main>
       <Footer />
