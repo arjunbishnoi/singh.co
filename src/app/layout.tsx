@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
-  preload: true,
+  variable: '--font-inter',
 });
 
 export const metadata: Metadata = {
@@ -19,14 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <head>
-        <style jsx global>{`
-          :root {
-            --font-inter: ${inter.style.fontFamily};
-          }
-        `}</style>
-      </head>
+    <html lang="en" className={inter.variable}>
       <body className="min-h-screen bg-cream antialiased font-sans">
         {children}
       </body>
