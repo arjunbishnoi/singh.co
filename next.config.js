@@ -6,8 +6,8 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/mansisingh.co',
+  assetPrefix: '/mansisingh.co',
   webpack: (config) => {
     config.module.rules.push({
       test: /\.css$/,
