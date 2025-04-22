@@ -6,13 +6,9 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/mansisingh.co' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/mansisingh.co/' : '',
+  basePath: '',
+  assetPrefix: '',
   webpack: (config) => {
-    config.module.rules.push({
-      test: /\.css$/,
-      use: ['css-loader', 'postcss-loader']
-    });
     return config;
   }
 };
