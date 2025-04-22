@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
   distDir: 'out',
   images: {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: '/singh.co',
-  assetPrefix: '/singh.co/',
+  basePath: process.env.NODE_ENV === 'production' ? '/singh.co' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/singh.co/' : '',
 };
 
 module.exports = nextConfig;
