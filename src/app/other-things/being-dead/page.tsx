@@ -36,7 +36,7 @@ export default function BeingDead() {
         
         <Slideshow images={images} altPrefix="BEING DEAD" hideControls={true} autoplay={true} />
         
-        <div className="max-w-3xl mx-auto mb-32">
+        <div className="max-w-3xl mx-auto mb-48">
           <p className="text-lg leading-relaxed text-gray-700 space-y-6">
             <span className="block font-medium text-gray-900">It is the power of the mind to be unconquerable.</span>
             

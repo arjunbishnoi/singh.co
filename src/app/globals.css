@@ -91,7 +91,7 @@
   }
 
   .project-title {
-    @apply text-white text-2xl sm:text-3xl md:text-4xl font-bold tracking-[-0.04em] opacity-0 transform translate-y-4 transition-all duration-300 ease-out;
+    @apply text-white text-2xl sm:text-3xl md:text-4xl font-bold tracking-[-0.04em] opacity-0 transform translate-y-4 transition-all duration-300 ease-out text-center;
   }
 
   .project-card:hover .project-image {

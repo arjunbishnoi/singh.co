@@ -53,7 +53,7 @@ export default function Women() {
           </div>
           <div className="aspect-[9/16] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/women/4.jpg" 
+              src="/women/4.JPG" 
               alt="Women 4" 
               className="w-full h-full object-cover"
             />
@@ -74,14 +74,14 @@ export default function Women() {
           </div>
           <div className="aspect-[9/16] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/women/7.jpg" 
+              src="/women/7.JPG" 
               alt="Women 7" 
               className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-[9/16] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/women/8.jpg" 
+              src="/women/8.JPG" 
               alt="Women 8" 
               className="w-full h-full object-cover"
             />

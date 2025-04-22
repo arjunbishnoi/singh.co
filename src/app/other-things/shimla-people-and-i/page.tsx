@@ -22,7 +22,7 @@ export default function ShimlaPeopleAndI() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mb-32">
           <div className="aspect-[4/3] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/shimla/1.jpg" 
+              src="/shimla/1.JPG" 
               alt="Shimla 1" 
               className="w-full h-full object-cover"
             />
@@ -36,21 +36,21 @@ export default function ShimlaPeopleAndI() {
           </div>
           <div className="aspect-[4/3] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/shimla/3.jpg" 
+              src="/shimla/3.JPG" 
               alt="Shimla 3" 
               className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-[4/3] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/shimla/4.jpg" 
+              src="/shimla/4.JPG" 
               alt="Shimla 4" 
               className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-[4/3] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/shimla/5.jpg" 
+              src="/shimla/5.JPG" 
               alt="Shimla 5" 
               className="w-full h-full object-cover"
             />
@@ -64,21 +64,21 @@ export default function ShimlaPeopleAndI() {
           </div>
           <div className="aspect-[4/3] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/shimla/7.jpg" 
+              src="/shimla/7.JPG" 
               alt="Shimla 7" 
               className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-[4/3] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/shimla/8.jpg" 
+              src="/shimla/8.JPG" 
               alt="Shimla 8" 
               className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-[4/3] rounded-2xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
             <img 
-              src="/shimla/9.jpg" 
+              src="/shimla/9.JPG" 
               alt="Shimla 9" 
               className="w-full h-full object-cover"
             />

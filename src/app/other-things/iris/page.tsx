@@ -35,7 +35,7 @@ export default function Iris() {
               playsInline
               poster="/videos/iris/poster.jpg"
             >
-              <source src="/videos/iris/iris-video.mp4" type="video/mp4" />
+              <source src="/videos/iris/iris-video.MP4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
