@@ -26,7 +26,7 @@ export default function TravelAdventures() {
         <h1 className="section-title mb-8">travel adventures.</h1>
         
         <div className="mb-32">
-          <Slideshow images={images} />
+          <Slideshow images={images} altPrefix="Travel Adventures" />
         </div>
       </main>
       <Footer />
