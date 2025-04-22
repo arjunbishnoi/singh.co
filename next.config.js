@@ -6,8 +6,8 @@ const nextConfig = {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/singh.co',
+  assetPrefix: '/singh.co/',
 };
 
 module.exports = nextConfig;
