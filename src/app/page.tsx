@@ -76,7 +76,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row gap-12 md:gap-20 items-start">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0">
               <img 
-                src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mansi" 
+                src="/profile/profile.jpg" 
                 alt="Mansi Singh" 
                 className="w-full h-full object-cover"
               />
