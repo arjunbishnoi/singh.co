@@ -8,11 +8,15 @@
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
   --background-cream: #FAF9F6;
+  --logo-width: 5.5rem;  /* Approximate width of "mansi." at text-3xl */
+  --logo-width-md: 6.5rem;  /* Approximate width of "mansi." at text-4xl */
+  --edge-spacing: 2rem;  /* 8 units in Tailwind */
+  --edge-spacing-md: 3rem;  /* 12 units in Tailwind */
 }
 
 @layer base {
   html {
-    @apply antialiased;
+    @apply antialiased scroll-smooth;
   }
   
   body {
@@ -22,19 +26,75 @@
 }
 
 @layer components {
-  .container {
-    @apply max-w-6xl mx-auto px-6 lg:px-8;
-  }
-
   .hero-title {
-    @apply text-[12rem] leading-none font-bold tracking-[-0.08em];
+    @apply text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[12rem] leading-none font-bold tracking-[-0.08em];
   }
 
   .hero-email {
-    @apply text-lg font-medium hover:underline cursor-pointer tracking-[-0.04em];
+    @apply text-base sm:text-lg md:text-xl lg:text-3xl font-medium underline cursor-pointer tracking-[-0.04em] w-fit;
   }
 
   .hero-text {
-    @apply text-3xl font-normal leading-relaxed tracking-[-0.04em];
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-[-0.04em] ml-auto w-fit space-y-4 sm:space-y-6;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-[-0.04em] mb-8 sm:mb-12;
+  }
+
+  .section-header {
+    @apply flex justify-between items-center mb-8 sm:mb-12;
+  }
+
+  .view-all-btn {
+    @apply text-base sm:text-lg md:text-xl font-medium hover:text-gray-600 transition-colors tracking-[-0.04em];
+  }
+
+  .project-card {
+    @apply bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+  }
+
+  .project-image {
+    @apply w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover;
+  }
+
+  .project-content {
+    @apply p-6 sm:p-8 space-y-3 sm:space-y-4;
+  }
+
+  .project-title {
+    @apply text-xl sm:text-2xl md:text-3xl font-semibold tracking-[-0.04em];
+  }
+
+  .project-description {
+    @apply text-base sm:text-lg md:text-xl text-gray-600 tracking-[-0.04em];
+  }
+
+  .about-text {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium tracking-[-0.04em] max-w-4xl space-y-6 sm:space-y-8;
+  }
+
+  .contact-form {
+    @apply max-w-2xl space-y-6 sm:space-y-8;
+  }
+
+  .form-input {
+    @apply w-full bg-transparent border-b-2 border-black py-3 sm:py-4 text-lg sm:text-xl focus:outline-none focus:border-gray-600 transition-colors;
+  }
+
+  .submit-btn {
+    @apply bg-black text-white px-6 sm:px-8 py-3 sm:py-4 text-lg sm:text-xl font-medium hover:bg-gray-800 transition-colors;
+  }
+
+  .content-start {
+    @apply pl-4 sm:pl-6 md:pl-8 lg:pl-[calc(3rem+var(--logo-width-md))];
+  }
+
+  .content-end {
+    @apply pr-4 sm:pr-6 md:pr-8 lg:pr-[calc(3rem+var(--logo-width-md))];
+  }
+
+  .content-container {
+    @apply content-start content-end;
   }
 }
