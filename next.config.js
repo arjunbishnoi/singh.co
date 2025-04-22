@@ -1,13 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
+  output: 'export',
   distDir: 'out',
   images: {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/singh.co' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/singh.co/' : '',
+  basePath: '/singh.co',
+  assetPrefix: '/singh.co/',
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    });
+    return config;
+  }
 };
 
 module.exports = nextConfig;

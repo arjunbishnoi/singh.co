@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         cream: '#FAF9F6',
