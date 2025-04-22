@@ -26,7 +26,7 @@ export default function ArtCollection() {
         <h1 className="section-title mb-8">art collection.</h1>
         
         <div className="mb-32">
-          <Slideshow images={images} />
+          <Slideshow images={images} altPrefix="Art Collection" />
         </div>
       </main>
       <Footer />
