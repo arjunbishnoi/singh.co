@@ -4,24 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
-  --background-cream: #FAF9F6;
-  --logo-width: 5.5rem;  /* Approximate width of "mansi." at text-3xl */
-  --logo-width-md: 6.5rem;  /* Approximate width of "mansi." at text-4xl */
-  --edge-spacing: 2rem;  /* 8 units in Tailwind */
-  --edge-spacing-md: 3rem;  /* 12 units in Tailwind */
-}
-
 @layer base {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-rgb: 255, 255, 255;
+    --background-cream: #FAF9F6;
+    --logo-width: 5.5rem;  /* Approximate width of "mansi." at text-3xl */
+    --logo-width-md: 6.5rem;  /* Approximate width of "mansi." at text-4xl */
+    --edge-spacing: 2rem;  /* 8 units in Tailwind */
+    --edge-spacing-md: 3rem;  /* 12 units in Tailwind */
+  }
+
   html {
     @apply antialiased scroll-smooth;
   }
   
   body {
-    @apply min-h-screen tracking-[-0.04em];
-    background-color: var(--background-cream);
+    @apply min-h-screen tracking-[-0.04em] bg-cream;
   }
 }
 
