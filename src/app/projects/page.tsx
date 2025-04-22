@@ -15,48 +15,36 @@ export default function Projects() {
           {/* Project 1 */}
           <Link href="/projects/brand-identity" className="project-card">
             <img 
-              src="https://picsum.photos/800/600?random=1" 
-              alt="Project 1" 
-              className="project-image"
+              src="/heineken/1.jpg"
+              alt="HEINEKEN Project" 
+              className="project-image heineken-preview-image"
             />
             <div className="project-overlay">
-              <h3 className="project-title">Brand Identity Design</h3>
+              <h3 className="project-title">HEINEKEN</h3>
             </div>
           </Link>
 
           {/* Project 2 */}
           <Link href="/projects/social-media" className="project-card">
             <img 
-              src="https://picsum.photos/800/600?random=2" 
-              alt="Project 2" 
+              src="/cattie-talkie/1.jpg"
+              alt="CATTIE TALKIE Project" 
               className="project-image"
             />
             <div className="project-overlay">
-              <h3 className="project-title">Social Media Campaign</h3>
+              <h3 className="project-title">CATTIE TALKIE</h3>
             </div>
           </Link>
 
           {/* Project 3 */}
           <Link href="/projects/content-strategy" className="project-card">
             <img 
-              src="https://picsum.photos/800/600?random=3" 
-              alt="Project 3" 
+              src="/paw-patrol/1.png"
+              alt="PAW PATROL Project" 
               className="project-image"
             />
             <div className="project-overlay">
-              <h3 className="project-title">Content Strategy</h3>
-            </div>
-          </Link>
-
-          {/* Project 4 */}
-          <Link href="/projects/digital-marketing" className="project-card">
-            <img 
-              src="https://picsum.photos/800/600?random=4" 
-              alt="Project 4" 
-              className="project-image"
-            />
-            <div className="project-overlay">
-              <h3 className="project-title">Digital Marketing</h3>
+              <h3 className="project-title">PAW PATROL</h3>
             </div>
           </Link>
         </div>

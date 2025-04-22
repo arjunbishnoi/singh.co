@@ -20,13 +20,15 @@ export default function Slideshow({ images }: SlideshowProps) {
   return (
     <div className="project-detail">
       <div className="relative group">
-        {/* Main Image */}
-        <div className="project-card">
-          <img 
-            src={images[currentSlide]} 
-            alt={`Slide ${currentSlide + 1}`} 
-            className="project-image"
-          />
+        {/* Main Image Container */}
+        <div className="project-card bg-white">
+          <div className="project-image-container">
+            <img 
+              src={images[currentSlide]} 
+              alt={`Slide ${currentSlide + 1}`} 
+              className="project-image"
+            />
+          </div>
         </div>
 
         {/* Navigation Buttons */}
@@ -51,7 +53,7 @@ export default function Slideshow({ images }: SlideshowProps) {
         </button>
       </div>
 
-      {/* Dots Navigation - Moved Outside */}
+      {/* Dots Navigation */}
       <div className="slideshow-dots">
         {images.map((_, index) => (
           <button

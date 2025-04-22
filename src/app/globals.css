@@ -59,12 +59,31 @@
     @apply no-underline;
   }
 
+  /* Homepage and projects listing styles */
   .project-card {
     @apply relative overflow-hidden rounded-2xl transition-all duration-300 ease-out;
   }
 
-  .project-image {
+  .project-card .project-image {
     @apply w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover transition-all duration-300 ease-out;
+  }
+
+  /* Heineken preview image specific styles */
+  .heineken-preview-image {
+    @apply scale-125 object-center;
+  }
+
+  /* Project detail page styles */
+  .project-detail .project-card {
+    @apply relative overflow-hidden rounded-2xl transition-all duration-300 ease-out bg-white;
+  }
+
+  .project-detail .project-image-container {
+    @apply w-full aspect-[16/9] flex items-center justify-center;
+  }
+
+  .project-detail .project-image {
+    @apply max-w-full max-h-full w-auto h-auto object-contain;
   }
 
   .project-overlay {
@@ -76,7 +95,7 @@
   }
 
   .project-card:hover .project-image {
-    @apply scale-105 blur-sm;
+    @apply scale-105;
   }
 
   .project-card:hover .project-overlay {

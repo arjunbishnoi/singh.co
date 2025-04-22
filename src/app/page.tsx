@@ -30,28 +30,49 @@ export default function Home() {
           <div className="flex items-center justify-center sm:justify-start w-full mb-12 sm:mb-0">
             <button 
               onClick={copyEmail} 
-              className="hero-email"
+              className="hero-email min-w-[280px] transition-all duration-300 hover:scale-[1.02]"
               onMouseEnter={() => document.body.style.cursor = 'copy'}
               onMouseLeave={() => document.body.style.cursor = 'auto'}
             >
-              mansisingh1301@gmail.com
+              {copied ? "Copied!" : "mansisingh1301@gmail.com"}
             </button>
-            {copied && (
-              <span className="ml-2 text-sm text-gray-500">Copied!</span>
-            )}
           </div>
 
           {/* Hero Text */}
           <div className="hero-text w-full text-center sm:text-right">
             <p style={{ lineHeight: '0.8', marginBottom: '0' }} className="sm:line-height-normal sm:mb-4">Account Manager. Content Strategist.</p>
-            <p style={{ lineHeight: '0.8', marginBottom: '0' }} className="sm:line-height-normal sm:mb-4">Visual Storyteller. Toronto - based.</p>
+            <p style={{ lineHeight: '0.8', marginBottom: '0' }} className="sm:line-height-normal sm:mb-4">Visual Storyteller. Toronto-based.</p>
             <p style={{ lineHeight: '0.8', marginBottom: '0' }} className="sm:line-height-normal">Welcome to the heart of my work.</p>
           </div>
         </div>
 
         {/* About Section */}
         <section id="about" className="mb-48 scroll-mt-40 relative">
-          <h2 className="section-title pl-0">about.</h2>
+          <div className="section-header">
+            <h2 className="section-title mb-0">about.</h2>
+            <a 
+              href="/resume.pdf" 
+              download
+              className="view-all-btn inline-flex items-center gap-2"
+            >
+              <span>Resume</span>
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="20" 
+                height="20" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </a>
+          </div>
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center">
             <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex-shrink-0 mx-auto md:mx-0">
               <img 
@@ -62,13 +83,13 @@ export default function Home() {
             </div>
             <div className="about-text pl-0">
               <p>
-                I'm a multifaceted professional with a passion for crafting compelling narratives and driving business growth. With a background in account management and content strategy, I specialize in bridging the gap between creative vision and strategic execution.
+                Hi, I'm Mansi Singh — A Toronto-based Account Manager and Content Strategist who thrives at the intersection of creativity, strategy, and people. With a background in advertising, strategy and content production, I bring client visions to life by bridging big ideas with creative execution—where "what if" meets "what works."
               </p>
               <p>
-                My approach combines analytical thinking with creative problem-solving, allowing me to develop innovative solutions that resonate with audiences and deliver measurable results. I believe in the power of storytelling to create meaningful connections and drive engagement across all platforms.
+                With a creative soul and a strategic mind, I effortlessly bridge the gap between the client and my team. Whether I'm crafting pitch decks, managing campaigns, or shaping brand narratives, I work at the crossroads of creative ideas and strategic execution.
               </p>
               <p>
-                Based in Toronto, I work with clients and teams globally, bringing a diverse perspective and adaptable mindset to every project. Whether it's developing content strategies, managing client relationships, or creating visual narratives, I'm committed to excellence and continuous growth.
+                When I'm not working, you'll find me obsessing over a film, out capturing photos, or exploring Toronto one neighbourhood at a time. This portfolio is a curated mix of my work, passions, and perspective—thanks for being here.
               </p>
             </div>
           </div>
@@ -87,24 +108,24 @@ export default function Home() {
             {/* Project 1 */}
             <Link href="/projects/brand-identity" className="project-card">
               <img 
-                src="https://picsum.photos/800/600?random=1" 
-                alt="Project 1" 
-                className="project-image"
+                src="/heineken/1.jpg"
+                alt="HEINEKEN Project" 
+                className="project-image heineken-preview-image"
               />
               <div className="project-overlay">
-                <h3 className="project-title">Brand Identity Design</h3>
+                <h3 className="project-title">HEINEKEN</h3>
               </div>
             </Link>
 
             {/* Project 2 */}
             <Link href="/projects/social-media" className="project-card">
               <img 
-                src="https://picsum.photos/800/600?random=2" 
-                alt="Project 2" 
+                src="/cattie-talkie/1.jpg"
+                alt="CATTIE TALKIE Project" 
                 className="project-image"
               />
               <div className="project-overlay">
-                <h3 className="project-title">Social Media Campaign</h3>
+                <h3 className="project-title">CATTIE TALKIE</h3>
               </div>
             </Link>
           </div>
